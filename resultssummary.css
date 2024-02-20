@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family:'Hanken Grotesk',sans-serif ;
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+body{
+    font-family: 'Hanken Grotesk',sans-serif ;;
+}
+.div-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+.yourResult{
+    background-image:linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%)) ;
+    width: 250px;
+    padding: 30px;
+    color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.yourResult h1,strong,p{
+    color: #ffffff87;
+    font-weight: 600;
+}
+#Great{
+    color: white;
+    margin: 15px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.circle{
+    background-image: linear-gradient(to bottom,hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    margin: 25px;
+    padding: 50px;
+    border-radius: 50%;
+}
+.circle h2{
+ font-size: 3.5em;
+}
+.circle p {
+    color:  #ffffff87;;
+}
+.summary{
+    width: 250px;
+    padding: 30px;
+    box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.082);
+    border-radius: 15px;
+    background-color:white ;
+    
+}
+.summary h2, p{
+    color: hsl(224, 30%, 27%);
+}
+
+
+ #red{
+    color:  hsl(0, 100%, 67%);
+    
+}
+#yellow{
+    color:hsl(39, 100%, 56%);
+    
+}
+#green{
+   color: hsl(166, 100%, 37%);
+   
+}
+#blue{
+    color:  hsl(234, 85%, 45%);
+    
+}
+.reaction{
+    display: flex;
+    justify-content: space-around;
+    background-color:  hsla(0, 100%, 67%, 0.108);
+    padding: 10px;
+   border-radius: 13px;
+    margin: 10px;
+}
+.memory{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    background-color: hsla(39, 100%, 56%, 0.075);
+    padding: 10px;
+    border-radius: 13px;
+    
+}
+.verbal{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    background-color: hsla(166, 100%, 37%, 0.065);
+   padding: 10px;
+   border-radius: 13px;
+}
+.visual{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    background-color:  hsla(234, 85%, 45%, 0.045);
+    padding: 10px;
+    border-radius: 13px;
+}
