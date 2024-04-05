@@ -1,13 +1,17 @@
-let summary = document.querySelector('.summary')
-let reaction = document.querySelector('.reaction')
-let memory = document.querySelector('.memory') 
-let verbal = document.querySelector('.verbal')
-let visual= document.querySelector('.visual')
 
-fetch("data.json").then((response)=> {
-    response.json().then((data) =>{
-        data.results.map((el)=>{
-           reaction.innerHTML += `${score}`
+let reaction = document.querySelector('#red')
+let memory = document.querySelector('#yellow') 
+let verbal = document.querySelector('#green')
+let visual= document.querySelector('#blue')
+
+function botão(){
+
+    fetch("data.json").then((response)=> {
+        response.json().then((data) =>{
+           data.results.map((result)=>{
+            
+        
+           })
         })
     })
-})
+}
