@@ -1,66 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="resultssummary.css">
-  
-  <title>Frontend Mentor | Results summary component</title>
-</head>
-<body>
-<main>
-  <article class="div-container
-  ">
-    <section class="yourResult">
-    
-        <h1>Your Result</h1>
-        <div class="circle">
-          <h2>76</h2>
-          <p>of 100</p>
-        </div>
-    
-        <h1 id="Great">Great</h1>
-        <strong>You scored higher than 65% of the people who have taken these tests.</strong>
-    
-    </section>
-      <section class="summary">
-        <h2>Summary</h2>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="resultssummary.css" />
 
-        <div id="results">
-          <div class="reaction" >
-            <!-- <img src="assets/images/icon-reaction.svg" alt=""> -->
-            <strong id="red"></strong>
-            <p></p>
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="your-result">
+          <h2 class="transparent">Your Result</h2>
+          <div
+            id="round-score"
+          >
+            <p>76</p>
+            <span class="transparent" id="of100">
+              of 100
+            </span>
           </div>
-          <div class="memory">
-            <!-- <img src="assets/images/icon-memory.svg" alt=""> -->
-            <strong id="yellow"></strong>
-            <p></p>
-          </div>
-          <div class="verbal">
-           <!--  <img src="assets/images/icon-verbal.svg" alt=""> -->
-            <strong id="green"></strong>
-            <p></p>
-          </div>
-          <div class="visual">
-           <!--  <img src="assets/images/icon-visual.svg" alt=""> -->
-            <strong id="blue"></strong>
-            <p></p>
-          </div>
+
+          <h1>Great</h1>
+          <p class="transparent">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
         </div>
-    
-        <input type="button" value="Continue" onclick="botão()"></input>
+
+        <div class="summary">
+          <h2>Summary</h2>
+          <div class="card-summary" id="results">
+           
+
+
+            
+          </div>
+          <input type="button" value="Continue" id="button" onclick="carregar()" />
+        </div>
       </section>
-  </article>
-</main>
-  
+      
+    </main>
+
     <footer>
-      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>.
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >
+      </p>
+      .
       <p>Coded by <a href="#">Your Name Here</a>.</p>
     </footer>
-  
+
     <script src="resultssummary.js"></script>
-</body>
+  </body>
 </html>

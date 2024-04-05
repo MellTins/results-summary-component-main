@@ -1,17 +1,27 @@
+function carregar() {
+  fetch("data.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const resultado = document.querySelector("#results");
+      data.map((d) => {
+        const cardsummary = document.createElement("div");
+        cardsummary.classList.add("card-summary");
 
-let reaction = document.querySelector('#red')
-let memory = document.querySelector('#yellow') 
-let verbal = document.querySelector('#green')
-let visual= document.querySelector('#blue')
+        const icon = document.createElement("img");
+        icon.src = d.icon;
 
-function botão(){
+        const categoria = document.createElement('h3')
+        categoria.textContent = d.category
 
-    fetch("data.json").then((response)=> {
-        response.json().then((data) =>{
-           data.results.map((result)=>{
-            
-        
-           })
-        })
-    })
+        const score = document.createElement('p')
+        score.textContent = d.score
+
+        cardsummary.appendChild(icon)
+        cardsummary.appendChild(categoria)
+        cardsummary.appendChild(score)
+        resultado.appendChild(cardsummary)
+        resultado.innerHTML += '<p>/100</p>'
+      });
+    });
 }
+
