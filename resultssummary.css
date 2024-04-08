@@ -7,12 +7,18 @@
     font-family: "Hanken Grotesk";
     src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
 }
-.container{
+body{
+    background-color: hsl(221, 100%, 96%);
     font-family: "Hanken Grotesk";
+    text-align: center;
+}
+.container{
+    
     padding: 30px;
     margin: 30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 .your-result{
@@ -42,26 +48,25 @@
  border-radius: 50%;
 }
 .summary{
+    color:  hsl(224, 30%, 27%);;
     border-radius: 0 25px 25px  0;
     padding: 30px;
     box-shadow: 1px 0px 4px 0px rgb(169, 176, 181);
-    width: 250px;
-}
-
-.card-summary p{
-    display: flex;
-    flex-direction: row-reverse;
+    width: 200px;
+    background-color: hsl(0, 0%, 100%);
     
 }
-.card-summary{
-    align-items: baseline;
 
-}
 #button{
     padding: 20px;
     border-radius: 30px;
-    
-    color: hsl(0, 0%, 100%);;
-    background-image: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
-
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    margin: 15px 0px;
+    width: 200px;
+}
+#button:hover{
+    background-image:linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    cursor: pointer;
 }

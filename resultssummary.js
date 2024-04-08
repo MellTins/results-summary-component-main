@@ -3,6 +3,7 @@ function carregar() {
     .then((response) => response.json())
     .then((data) => {
       const resultado = document.querySelector("#results");
+      
       data.map((d) => {
         const cardsummary = document.createElement("div");
         cardsummary.classList.add("card-summary");
@@ -20,8 +21,9 @@ function carregar() {
         cardsummary.appendChild(categoria)
         cardsummary.appendChild(score)
         resultado.appendChild(cardsummary)
-        resultado.innerHTML += '<p>/100</p>'
+        cardsummary.innerHTML += '<p>/100</p>'
       });
     });
+    
 }
 
