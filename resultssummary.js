@@ -23,7 +23,9 @@ function carregar() {
         resultado.appendChild(cardsummary)
         cardsummary.innerHTML += '<p>/100</p>'
       });
+    
     });
     
 }
+
 
