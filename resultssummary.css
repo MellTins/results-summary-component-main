@@ -54,13 +54,54 @@ body{
 .summary{
     color:  hsl(224, 30%, 27%);;
     border-radius: 0 25px 25px  0;
-    padding: 30px;
+    padding: 50px;
     box-shadow: 1px 0px 4px 0px rgb(169, 176, 181);
-    width: 200px;
     background-color: hsl(0, 0%, 100%);
     
 }
+.card-summary {
+    width: 179px;
+    border-radius: 10px;
+    margin: 6px;
+}
 
+/* on this class i am adding the transparency on the score /100 */
+.card-summary p {
+    color: rgba(0, 0, 0, 0.439);
+    font-weight: 700;
+}
+#resultscss0{
+    background-color: hsla(0, 100%, 67%, 0.125);
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#resultscss1{
+    background-color: hsla(39, 100%, 56%, 0.232);
+    color: hsl(39, 100%, 56%);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#resultscss2{
+    background-color: hsla(166, 100%, 37%, 0.182);
+    color: hsl(166, 100%, 37%);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#resultscss3{
+ background-color: hsla(234, 85%, 45%, 0.161);
+ color: hsl(234, 85%, 45%);
+ display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#score{
+    color: black;
+    font-weight: 700;
+}
 
 #button{
     padding: 20px;
