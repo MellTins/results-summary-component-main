@@ -29,8 +29,9 @@ Users should be able to:
 
 ### Screenshot
 
-(![projeto-summary-components](https://github.com/MellTins/results-summary-component-main/assets/113524300/794c2853-4f59-4aaa-87c5-32e4af85ea1d)
-)
+(https://github.com/MellTins/results-summary-component-main/assets/113524300/8e1ea667-b7c0-446f-952a-89409a510085)
+
+
 
 ### Links
 
